@@ -2,7 +2,7 @@
   height: 30vh;
   white-space: pre-wrap;
 }
-textarea:focus{
+textarea:focus {
   outline: none;
 }
 .dark-mode{
@@ -12,5 +12,6 @@ textarea:focus{
   color: white;
 }
 .appContainer{
+  width: auto;
   height: 100vh;
 }

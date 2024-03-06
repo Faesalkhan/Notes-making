@@ -1,32 +1,28 @@
 import React, { useState } from "react";
-const AddNote = ({ handleAddNote }) => {
-  const characterLimit = 200;
+const AddNote = ({ addNote }) => {
   const [noteText, setNoteText] = useState("");
-  const handleChange = (e) => {
-    if (characterLimit - e.target.value.length >= 0) {
-      setNoteText(e.target.value);
-    }
-  };
-  const handleSaveClick = () => {
+  const handleSaveNote = () => {
     if (noteText.trim().length !== 0) {
-      handleAddNote(noteText);
+      addNote(noteText);
       setNoteText("");
+    } else {
+      alert("create note");
     }
   };
   return (
-    <div className="col-4 my-2">
-      <div className="p-3 note rounded-3 bg-info d-flex flex-column justify-content-between ">
+    <div className="col-xs-6 col-sm-4 my-2">
+      <div className="d-flex flex-column justify-content-between bg-info note p-2 rounded-4">
         <textarea
-          className="bg-info border-0"
-          placeholder="type here..."
-          rows="6"
+          placeholder="type note here..."
+          rows={7}
+          className="bg-transparent border-0 "
           value={noteText}
-          onChange={handleChange}
+          onChange={(e) => setNoteText(e.target.value)}
         ></textarea>
-        <div className="d-flex justify-content-between ">
-          <span>{characterLimit - noteText.length} remaining</span>
-          <button className="btn btn-light rounded-5" onClick={handleSaveClick}>
-            ➕
+        <div className="d-flex justify-content-between align-items-center  ">
+          <span>date</span>
+          <button className="btn btn-light rounded-5" onClick={handleSaveNote}>
+            save
           </button>
         </div>
       </div>
