@@ -1,19 +1,22 @@
-import React, { useState } from "react";
-const Search = ({ updateSearch }) => {
-  const [search, setSearch] = useState("");
+import React from "react";
+
+const Search = ({ search, setSearch, updateSearch }) => {
   const handleSearch = (e) => {
     setSearch(e.target.value);
     updateSearch(e.target.value);
   };
   return (
-    <div className="row">
-      <div className="col-12">
-        <input
-          className="form-control rounded-5 "
-          placeholder="search note..."
-          value={search}
-          onChange={handleSearch}
-        ></input>
+    <div className="container">
+      <div className="row">
+        <div className="col">
+          <input
+            type="text"
+            value={search}
+            onChange={handleSearch}
+            className="form-control"
+            placeholder="search note..."
+          ></input>
+        </div>
       </div>
     </div>
   );
