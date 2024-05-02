@@ -1,3 +1,12 @@
+.add-note{
+  background-color: lightgrey;
+}
+.note-background{
+  background-color: #ffcf56;
+}
+.editable{
+  background-color: lightcoral;
+}
 .note{
   height: 30vh;
   white-space: pre-wrap;
