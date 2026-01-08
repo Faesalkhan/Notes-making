@@ -67,7 +67,7 @@ const Note = ({
           </div>
         </div>
       </div>
-      <Modal show={show} onHide={handleClose} size="md">
+      <Modal show={show} onHide={handleClose} size="md" centered>
         <Modal.Header closeButton>
           <Modal.Title className="custom-modal-title">
             {note.text.slice(0, 10) + "..."}
@@ -79,12 +79,11 @@ const Note = ({
             <>
               <textarea
                 rows={8}
-                cols={60}
                 value={editNote.text}
                 onChange={(e) =>
                   setEditnote({ ...editNote, text: e.target.value })
                 }
-                className="bg-transparent border rounded-3 p-2"
+                className="form-control bg-transparent rounded-3 p-2 w-100"
               ></textarea>
             </>
           ) : (
