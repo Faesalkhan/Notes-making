@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "react-bootstrap";
 
 const AddNote = ({ addingNote }) => {
   const [noteText, setNoteText] = useState("");
@@ -11,8 +12,8 @@ const AddNote = ({ addingNote }) => {
     setNoteText("");
   };
   return (
-    <div className="col-4 my-3">
-      <div className="d-flex flex-column justify-content-between rounded-5 p-3 add-note note">
+    <div className="col col-sm-6 col-md-4 my-3">
+      <div className="d-flex flex-column justify-content-between rounded-2 p-3 add-note note">
         <textarea
           value={noteText}
           rows={7}
@@ -22,12 +23,13 @@ const AddNote = ({ addingNote }) => {
         ></textarea>
         <div className="d-flex justify-content-between ">
           <p>Today</p>
-          <button
-            className="btn btn-sm btn-light rounded-5 "
+          <Button
+            variant="primary"
+            className="fw-bold rounded-3 text-white"
             onClick={handleSave}
           >
-            save
-          </button>
+            Save
+          </Button>
         </div>
       </div>
     </div>

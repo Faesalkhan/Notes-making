@@ -1,26 +1,32 @@
-.add-note{
+.add-note {
   background-color: lightgrey;
 }
-.note-background{
-  background-color: #ffcf56;
+.note-background {
+  background-color: #fbd972f5;
 }
-.editable{
+.editable {
   background-color: lightcoral;
 }
-.note{
-  height: 30vh;
+.note {
+  height: 200px;
   white-space: pre-wrap;
+}
+.hover-class:hover {
+  transform: scale(1.05);
+}
+.word-wrap {
+  word-wrap: break-word;
 }
 textarea:focus {
   outline: none;
 }
-.dark-mode{
+.dark-mode {
   background-color: black;
 }
-.dark-mode h1{
+.dark-mode h1 {
   color: white;
 }
-.appContainer{
+.appContainer {
   width: auto;
   height: 100vh;
 }
