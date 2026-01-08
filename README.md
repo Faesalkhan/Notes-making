@@ -1,6 +1,6 @@
 # [🔗](https://notes-making-two.vercel.app/) Notes - notes making application
 
-The Notes Making App is a user-friendly application designed to help users organize and manage their notes efficiently. With its intuitive interface and essential features, users can easily add, delete, and edit the note to stay organized and productive.
+The Notes Making App is a user-friendly application designed to help users organize and manage their notes efficiently. With its intuitive interface and essential features, users can easily add, delete, and edit notes to stay organized and productive. The application is fully responsive, providing a seamless experience across mobile devices, tablets, and all screen sizes.
 
 ![Alt Text](src/images/Noteapp.png)
 
