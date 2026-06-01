@@ -51,18 +51,18 @@ const Note = ({
         <div className="d-flex justify-content-between ">
           <p>{note.date}</p>
           <div className="d-flex">
-            {/* <button
+            <button
               className="btn btn-sm rounded-5 btn-light mx-1"
               onClick={handleEdit}
             >
               ✍️
-            </button> */}
+            </button>
             <Button
               variant="danger"
               className="fw-bold rounded-3"
               onClick={handleDelete}
             >
-              🗑️Delete
+              🗑️
             </Button>
           </div>
         </div>
